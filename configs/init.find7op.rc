@@ -25,3 +25,9 @@ on init
     chmod 666 /sys/module/snd_soc_wcd9320/parameters/high_perf_mode
     write /sys/module/snd_soc_wcd9320/parameters/high_perf_mode 1
     chmod 444 /sys/module/snd_soc_wcd9320/parameters/high_perf_mode
+
+service mpdecision /system/vendor/bin/mpdecision --avg_comp
+    class main
+    user root
+    group root readproc
+    disabled
