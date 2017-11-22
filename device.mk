@@ -49,8 +49,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.perf.cores_online=1 \
     ro.vendor.extension_library=libqti-perfd-client.so
-
-# Camera
-PRODUCT_PACKAGES += \
-    SnapdragonCamera2 \
-    ParanoidCamera
